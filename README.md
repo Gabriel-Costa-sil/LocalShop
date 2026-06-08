@@ -5,21 +5,6 @@ Tecnologias usadas
 No frontend usei React Native com Expo, TypeScript, React Navigation pra navegação entre telas e Axios pra fazer as chamadas pra API.
 No backend usei Node.js com Express e TypeScript. O banco de dados é o Firebase Firestore, acessado pelo Firebase Admin SDK.
 
-Como rodar o projeto
-1. Clone o repositório
-bashgit clone https://github.com/seu-usuario/AppLocalShop.git
-cd AppLocalShop
-2. Configure o Firebase
-Antes de qualquer coisa, você precisa ter um projeto criado no Firebase com o Firestore ativado.
-Acesse o console do Firebase, vá em Configurações do projeto, depois em Contas de serviço e gere uma nova chave privada. Vai baixar um arquivo JSON, renomeie ele pra firebase-key.json e coloque dentro da pasta backend/.
-Esse arquivo não está no repositório porque contém credenciais privadas.
-3. Suba o backend
-Entre na pasta backend, instale as dependências com npm install e rode com npm run dev. O servidor vai subir na porta 3000. Pra confirmar que está funcionando, acesse http://localhost:3000 no navegador.
-4. Rode o frontend
-Entre na pasta frontend, instale as dependências com npm install e rode com npm start.
-O Expo vai abrir uma janela no navegador com um QR code. Você pode escanear com o app Expo Go no celular ou rodar em um emulador.
-Se for testar num celular físico, abra o arquivo frontend/src/services/api.ts e troque o endereço da API pelo IP da sua máquina na rede local. No emulador Android isso não precisa, já está configurado corretamente.
-
 O que o app faz
 Na tela inicial aparece uma lista com todas as lojas cadastradas. Dá pra clicar em qualquer uma pra ver os detalhes, como categoria, distância e descrição.
 Tem um botão na tela inicial pra cadastrar uma loja nova, onde você preenche nome, categoria, imagem, distância e descrição.
